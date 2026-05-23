@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tenant Communications — Privacy &amp; SMS Terms</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f5f0;
+      --ink: #1a1814;
+      --muted: #6b6660;
+      --rule: #d9d4cc;
+      --accent: #2d5a3d;
+      --accent-light: #e8f0ea;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid var(--rule);
+      padding: 2rem 0;
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .container { max-width: 740px; margin: 0 auto; padding: 0 2rem; }
+    .site-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.01em;
+      color: var(--ink);
+    }
+    .site-name span { color: var(--accent); font-style: italic; }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+    .meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* ── Nav pills ── */
+    .pill-nav {
+      display: flex;
+      gap: 0.75rem;
+      margin: 2.5rem 0;
+      flex-wrap: wrap;
+    }
+    .pill-nav a {
+      display: inline-block;
+      padding: 0.4rem 1.1rem;
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--muted);
+      text-decoration: none;
+      transition: all 0.18s;
+    }
+    .pill-nav a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    /* ── Sections ── */
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    section:last-of-type { border-bottom: none; }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.15rem;
+      margin: 2rem 0 0.75rem;
+    }
+
+    p { margin-bottom: 1rem; color: #3a3630; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 1.4rem;
+      margin-bottom: 1rem;
+      color: #3a3630;
+    }
+    li { margin-bottom: 0.4rem; }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: var(--accent-light);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .highlight strong { color: var(--accent); font-weight: 500; }
+
+    /* ── Footer ── */
+    footer {
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--rule);
+      margin-top: 1rem;
+    }
+    footer p { font-size: 0.82rem; color: var(--muted); margin: 0; }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <div class="site-name">Ryan Isabelle <span>&amp; Properties</span></div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="hero">
+      <p class="meta">Tenant Communications · Last updated: <span id="date"></span></p>
+      <h1>Privacy &amp; <em>SMS Terms</em></h1>
+      <p style="color:var(--muted); max-width:520px; margin-top:1rem;">
+        This page explains why you may receive text messages or emails from your landlord through this system, what kinds of messages to expect, and how to stop receiving them at any time.
+      </p>
+    </div>
+
+    <nav class="pill-nav" aria-label="Jump to section">
+      <a href="#messages">What We Send</a>
+      <a href="#sms">SMS Terms</a>
+      <a href="#privacy">Your Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ── WHAT WE SEND ── -->
+    <section id="messages">
+      <p class="section-label">01 — What We Send</p>
+      <h2>Messages You May Receive</h2>
+
+      <p>
+        As a tenant, you may receive SMS text messages and emails related to your tenancy. All messages come directly from your landlord and are sent only for the purposes listed below. You will never receive promotional or marketing content.
+      </p>
+
+      <h3>Rent Reminders</h3>
+      <p>
+        A friendly reminder sent a few days before your rent is due. It will include the amount owed and the due date. These are sent to help you avoid late fees — not as a demand notice.
+      </p>
+
+      <h3>Late Payment Notices</h3>
+      <p>
+        If a rent payment has not been received after the grace period, you will receive a single notice letting you know the payment is overdue. This message is sent once per late payment.
+      </p>
+
+      <h3>Payment Confirmations</h3>
+      <p>
+        A confirmation sent when your rent payment has been recorded, so you have a record that it was received.
+      </p>
+
+      <h3>Planned Maintenance &amp; Property Notices</h3>
+      <p>
+        Advance notice of any scheduled maintenance, inspections, repairs, or other property events that may affect your unit or require access. These are sent as early as possible to give you adequate notice.
+      </p>
+
+      <h3>Lease Renewal Reminders</h3>
+      <p>
+        A heads-up when your lease is approaching its end date, so you have time to discuss renewal or make other arrangements.
+      </p>
+
+      <h3>Welcome &amp; Move-In Messages</h3>
+      <p>
+        An introductory message sent at the start of your tenancy with any relevant information for getting settled.
+      </p>
+
+      <div class="highlight">
+        <strong>That's it.</strong> You will only ever receive messages related to your tenancy. No promotions, no third-party offers, no spam.
+      </div>
+    </section>
+
+    <!-- ── SMS TERMS ── -->
+    <section id="sms">
+      <p class="section-label">02 — SMS Messaging Terms</p>
+      <h2>Text Message Program</h2>
+
+      <h3>Opt-In</h3>
+      <p>
+        By providing your phone number to your landlord, you consent to receive the transactional text messages described above. Your consent is not a condition of your lease or tenancy.
+      </p>
+
+      <h3>Message Frequency</h3>
+      <p>
+        Message frequency varies based on your payment schedule and property activity. In a typical month you can expect one to three messages — usually a rent reminder and, if applicable, a payment confirmation. Maintenance and lease messages are sent only when relevant.
+      </p>
+
+      <h3>Message &amp; Data Rates</h3>
+      <p>
+        Standard message and data rates may apply depending on your mobile carrier plan. There is no charge from us for any messages sent through this program.
+      </p>
+
+      <h3>How to Opt Out</h3>
+      <p>
+        You may stop receiving text messages at any time by replying <strong>STOP</strong> to any message. You will receive one final confirmation and no further messages will be sent to your number. To resume messages, contact your landlord directly.
+      </p>
+
+      <h3>Help</h3>
+      <p>
+        Reply <strong>HELP</strong> to any message for assistance, or contact Ryan Isabelle directly using the details in the Contact section below.
+      </p>
+
+      <h3>Supported Carriers</h3>
+      <p>
+        This program is available on most major US carriers. Carriers are not liable for delayed or undelivered messages.
+      </p>
+    </section>
+
+    <!-- ── PRIVACY ── -->
+    <section id="privacy">
+      <p class="section-label">03 — Your Privacy</p>
+      <h2>How Your Information Is Used</h2>
+
+      <p>
+        Your phone number and email address are used solely to send the tenancy-related messages described above. They are stored securely and are never used for any other purpose.
+      </p>
+
+      <div class="highlight">
+        <strong>No sharing, ever.</strong> Your contact information — including your phone number and any message opt-in data — is never sold, rented, or shared with third parties, affiliates, or marketing services for any purpose, at any time.
+      </div>
+
+      <h3>Your Rights</h3>
+      <p>
+        You may request access to, correction of, or deletion of any personal information held about you at any time. Simply contact Ryan Isabelle using the details below and your request will be addressed promptly.
+      </p>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+      <p class="section-label">04 — Contact</p>
+      <h2>Get in Touch</h2>
+      <p>
+        Questions about these terms, your messages, or your personal information? Reach out directly:
+      </p>
+      <p>
+        <strong>Ryan Isabelle</strong><br />
+        <strong>Email:</strong> ryabnz@gmail.com
+      </p>
+      <p style="color:var(--muted); font-size:0.9rem; margin-top:1.5rem;">
+        To stop receiving text messages, reply STOP to any message. To get help, reply HELP.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Ryan Isabelle. All rights reserved.
+        &nbsp;·&nbsp; <a href="#messages">Messages</a>
+        &nbsp;·&nbsp; <a href="#sms">SMS Terms</a>
+        &nbsp;·&nbsp; <a href="#privacy">Privacy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const now = new Date();
+    document.getElementById('date').textContent = now.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+    document.getElementById('year').textContent = now.getFullYear();
+  </script>
+
+</body>
+</html>
